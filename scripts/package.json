@@ -1,5 +1,5 @@
 {
-  "name": "beakerbrowser",
+  "name": "org.enclavia.jolly-browser",
   "devDependencies": {
     "browserify": "^16.0.0",
     "electron": "11.0.0-beta.18",
@@ -29,8 +29,8 @@
   },
   "build": {
     "afterSign": "./afterSignHook.js",
-    "appId": "com.bluelinklabs.beaker-browser",
-    "asar": false,
+    "appId": "org.enclavia.jolly-browser",
+    "asar": true,
     "asarUnpack": [
       "./fg/json-renderer/index.build.js",
       "./fg/syntax-highlighter/index.js",
@@ -38,7 +38,7 @@
       "./node_modules/sodium-native/**",
       "./node_modules/hyperdrive-daemon/**"
     ],
-    "copyright": "© 2020, Blue Link Labs",
+    "copyright": "© 2021, Enclavia Labs",
     "directories": {
       "app": "../app",
       "buildResources": "../build",
@@ -69,8 +69,8 @@
     "appImage": {
       "category": "Network",
       "desktop": {
-        "Name": "Beaker Browser",
-        "GenericName": "Web Browser",
+        "Name": "Jolly Browser",
+        "GenericName": "Jolly",
         "Type": "Application",
         "Terminal": false,
         "MimeType": "text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/hyper;x-scheme-handler/dat;video/webm;application/x-xpinstall;",
@@ -109,11 +109,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/beakerbrowser/beaker"
+    "url": "https://github.com/EnclaviaLabs/JollyBrowser"
   },
   "bugs": {
-    "url": "https://github.com/beakerbrowser/beaker/issues"
+    "url": "https://github.com/EnclaviaLabs/JollyBrowser/issues"
   },
-  "homepage": "https://beakerbrowser.com/",
+  "homepage": "https://envlavia.org/",
   "dependencies": {}
 }

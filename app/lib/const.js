@@ -4,7 +4,7 @@ import { join as joinPath } from 'path'
 
 // native FS file paths
 export const ANALYTICS_DATA_FILE = 'analytics-ping.json'
-export const ANALYTICS_SERVER = 'analytics.beakerbrowser.com'
+export const ANALYTICS_SERVER = 'analytics.enclavia.org'
 export const ANALYTICS_CHECKIN_INTERVAL = ms('6h')
 
 // hyperdrive FS file paths
@@ -29,7 +29,7 @@ export const INVALID_SAVE_FOLDER_CHAR_REGEX = /[^0-9a-zA-Z-_ ]/g
 export const DAT_SWARM_PORT = 3282
 export const DRIVE_MANIFEST_FILENAME = 'index.json'
 let quotaEnvVar = process.env.BEAKER_DAT_QUOTA_DEFAULT_BYTES_ALLOWED || process.env.beaker_dat_quota_default_bytes_allowed
-export const DAT_QUOTA_DEFAULT_BYTES_ALLOWED = bytes.parse(quotaEnvVar || '500mb')
+export const DAT_QUOTA_DEFAULT_BYTES_ALLOWED = bytes.parse(quotaEnvVar || '2100mb')
 export const DAT_CACHE_TIME = ms('7d')
 export const DEFAULT_DAT_DNS_TTL = ms('1h')
 export const MAX_DAT_DNS_TTL = ms('7d')

@@ -64,7 +64,7 @@ export function buildWindowMenu (opts = {}) {
   const isWritable = driveInfo && driveInfo.writable
 
   var darwinMenu = {
-    label: 'Beaker',
+    label: 'Jolly',
     submenu: [
       {
         label: 'Preferences',
@@ -77,7 +77,7 @@ export function buildWindowMenu (opts = {}) {
       { type: 'separator' },
       { label: 'Services', role: 'services', submenu: [] },
       { type: 'separator' },
-      { label: 'Hide Beaker', accelerator: 'Cmd+H', role: 'hide' },
+      { label: 'Hide Jolly', accelerator: 'Cmd+H', role: 'hide' },
       { label: 'Hide Others', accelerator: 'Cmd+Alt+H', role: 'hideothers' },
       { label: 'Show All', role: 'unhide' },
       { type: 'separator' },
@@ -163,7 +163,7 @@ export function buildWindowMenu (opts = {}) {
       // },
       {
         id: 'exportPageAs',
-        label: 'Export Page As...',
+        label: 'Pirate Page As...',
         enabled: !noWindows,
         click: async (item) => {
           if (!tab) return
@@ -817,10 +817,10 @@ export function buildWindowMenu (opts = {}) {
     submenu: [
       {
         id: 'beakerHelp',
-        label: 'Beaker Help',
+        label: 'Jolly Help',
         accelerator: 'F1',
         click: function (item) {
-          if (win) tabManager.create(win, 'https://docs.beakerbrowser.com/', {setActive: true})
+          if (win) tabManager.create(win, 'https://docs.jolly-browser.enclavia.org/', {setActive: true})
         }
       },
       {type: 'separator'},
@@ -828,14 +828,14 @@ export function buildWindowMenu (opts = {}) {
         id: 'reportIssue',
         label: 'Report Issue',
         click: function (item) {
-          if (win) tabManager.create(win, 'https://github.com/beakerbrowser/beaker/issues', {setActive: true})
+          if (win) tabManager.create(win, 'https://github.com/EnclaviaLabs/JollyBrowser/issues', {setActive: true})
         }
       },
       {
         id: 'beakerDiscussions',
         label: 'Discussion Forum',
         click: function (item) {
-          if (win) tabManager.create(win, 'https://github.com/beakerbrowser/beaker/discussions', {setActive: true})
+          if (win) tabManager.create(win, 'https://github.com/EnclaviaLabs/JollyBrowser/discussions', {setActive: true})
         }
       }
     ]
